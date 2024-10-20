@@ -32,7 +32,7 @@ class OutcomingMailController extends Controller
             'tanggal_dikirim' => 'required|date',
             'tanggal_dibuat' => 'required|date',
             'deskripsi' => 'nullable|string',
-            'attachment' => 'required|mimes:pdf|max:2048', // Maksimal 2MB, hanya PDF
+            'attachment' => 'required|mimes:pdf|max:10000', // Maksimal 2MB, hanya PDF
         ]);
 
         // Simpan file ke storage public dengan nama unik (UUID)
